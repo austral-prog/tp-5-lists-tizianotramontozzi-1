@@ -11,4 +11,11 @@ def find_max(lista):
     Returns:
         El valor máximo de la lista o None si está vacía
     """
-    pass  # Reemplazar con tu implementación
+    if len(lista) <=0 :
+        return None
+    else:
+        return max(lista)
+
+print(find_max([3, 7, 2, 9, 1]))
+print(find_max([-5, -2, -8, -1, -10]))
+print(find_max([]))

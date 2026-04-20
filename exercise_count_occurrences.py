@@ -11,4 +11,14 @@ def count_occurrences(lista, elemento):
     Returns:
         Un entero con la cantidad de veces que aparece el elemento
     """
-    pass  # Reemplazar con tu implementación
+    if len(lista) <= 0:
+        return 0
+    else:
+        return lista.count(elemento)
+
+print(count_occurrences([1, 2, 2, 3, 2, 4], 2))
+print(count_occurrences([1, 2, 3, 4, 5], 10))
+print(count_occurrences(['red', 'blue', 'red', 'green', 'red'], 'red'))
+
+
+
